@@ -219,6 +219,7 @@ const displayBookmark = () => {
 };
 
 const displaySingleRecipe = (id) => {
+  window.scrollTo(0, 0);
   getRecipeInfo(id).then((data) => displayRecipe(data));
 };
 
