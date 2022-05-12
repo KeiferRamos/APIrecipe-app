@@ -219,11 +219,7 @@ const displayBookmark = () => {
 };
 
 const displaySingleRecipe = (id) => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+  $("body").scrollTop(0);
   getRecipeInfo(id).then((data) => displayRecipe(data));
 };
 
