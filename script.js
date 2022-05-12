@@ -60,7 +60,6 @@ const displayRecipe = (data) => {
     pricePerServing,
     readyInMinutes,
     healthScore,
-    spoonacularScore,
   } = data;
 
   const instructionsData = instructions
@@ -175,6 +174,7 @@ const displayRecipes = async () => {
 
   $(".item").on("click", ({ currentTarget }) => {
     const { id } = currentTarget.dataset;
+    window.scrollTo = 0;
     displaySingleRecipe(id);
   });
 };
